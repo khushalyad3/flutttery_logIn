@@ -1,13 +1,24 @@
 import 'package:flutter/material.dart';
 
-class KConstants extends StatefulWidget {
-  @override
-  _KConstantsState createState() => _KConstantsState();
-}
+final kHintTextStyle = TextStyle(
+  color: Colors.white54,
+  fontFamily: 'OpenSans',
+);
 
-class _KConstantsState extends State<KConstants> {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
+final kLabelStyle = TextStyle(
+  color: Colors.white,
+  fontWeight: FontWeight.bold,
+  fontFamily: 'OpenSans',
+);
+
+final kBoxDecorationStyle = BoxDecoration(
+  color: Color(0xFF6CA8F1),
+  borderRadius: BorderRadius.circular(10.0),
+  boxShadow: [
+    BoxShadow(
+      color: Colors.black12,
+      blurRadius: 6.0,
+      offset: Offset(0, 2),
+    ),
+  ],
+);
